@@ -24,7 +24,7 @@ variable "zelman-project" {
   
 }
 
-variable "elzen-project-firebase" {
+variable "elzenmusic-project-firebase" {
   description = "Elzen project ID firebase"
   type = string  
 }
@@ -32,4 +32,18 @@ variable "elzen-project-firebase" {
 variable "elzenmusic-project" {
   description = "Elzen project google"
   type = string  
+}
+variable "elzenmusic-dev-firebase" {
+  description = "Elzen project google Dev environment firebase"
+  type = string  
+}
+variable "elzenmusic-dev-google" {
+  description = "Elzen project google Dev environment "
+  type = string  
+}
+
+variable "create_dev_environment" {
+  description = "Indicates whether to create the development environment"
+  type        = bool
+  default     = true  # Cambia a true si deseas crear el ambiente de desarrollo
 }
