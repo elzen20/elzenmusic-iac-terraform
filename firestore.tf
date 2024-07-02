@@ -1,6 +1,6 @@
 resource "google_firestore_database" "default" {
     provider = google-beta
-    project     = var.elzen-project-firebase
+    project     = var.elzenmusic-project-firebase
     name        = "(default)"
     location_id = "nam5"
     type        = "FIRESTORE_NATIVE"
